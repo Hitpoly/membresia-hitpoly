@@ -63,7 +63,7 @@ function Home() {
         <Box
           id="section3"
           sx={{
-            padding: { xs: "40px 20px", md: "60px 100px" },
+            padding: { xs: "40px 40px", md: "60px 100px" },
             overflowX: "hidden",
             display: "flex",
             justifyContent: "center",

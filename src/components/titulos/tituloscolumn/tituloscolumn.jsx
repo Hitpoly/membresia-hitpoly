@@ -2,16 +2,17 @@ import { Box, Typography } from "@mui/material";
 
 function TituloColumn() {
   return (
-    <Box sx={{ display: "flex", flexDirection: "column", alignItems: { xs: "center", md: "flex-start" } }}>
+    <Box sx={{ display: "flex", flexDirection: "column", alignItems: { xs: "center", md: "flex-start" }, }}>
       <Typography
         variant="h4"
         sx={{
           fontWeight: "bold",
           fontFamily: "Poppins, sans-serif",
           color: "#200E24",
-          width: "60%",
-          fontSize: "40px",
+          width: {xs: "90%", md: "60%"},
+          fontSize: { xs: "30px", sm: "30px", md: "35px", lg: "40px" },
           marginBottom: "16px",
+          textAlign: {xs: "center", md: "left"}
         }}
       >
         HISTORIAS DE ÉXITO, RESULTADOS REALES

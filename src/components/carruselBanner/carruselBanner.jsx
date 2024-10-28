@@ -26,7 +26,7 @@ const bannersData = [
     buttonLink: "/",
   },
   {
-    title: "CONSTRUYE UN LEGADO PARA TODA TU FAMILIA",
+    title: "CONSTRUYE UN LEGADO FAMILIAR",
     subtitle:
       "Estamos asegurando el futuro de nuestros hijos y nietos, un legado en el que la unión y la colaboración cobran cada vez más fuerza para forjar un porvenir más brillante y equitativo para todos.",
     buttonText: "Descubrir Más",
@@ -54,12 +54,13 @@ function CarruselBanner() {
 
   const handleMouseDown = (event) => {
     setIsDragging(true);
-    setStartX(event.clientX);
+    setStartX(event.clientX || event.touches[0].clientX);
   };
 
   const handleMouseMove = (event) => {
     if (!isDragging) return;
-    const diff = event.clientX - startX;
+    const currentX = event.clientX || event.touches[0].clientX;
+    const diff = currentX - startX;
 
     if (diff > 50) {
       // Dragging right
@@ -73,6 +74,19 @@ function CarruselBanner() {
   };
 
   const handleMouseUp = () => {
+    setIsDragging(false);
+  };
+
+  const handleTouchStart = (event) => {
+    setIsDragging(true);
+    setStartX(event.touches[0].clientX);
+  };
+
+  const handleTouchMove = (event) => {
+    handleMouseMove(event);
+  };
+
+  const handleTouchEnd = () => {
     setIsDragging(false);
   };
 
@@ -91,6 +105,9 @@ function CarruselBanner() {
       onMouseMove={handleMouseMove}
       onMouseUp={handleMouseUp}
       onMouseLeave={handleMouseUp}
+      onTouchStart={handleTouchStart}
+      onTouchMove={handleTouchMove}
+      onTouchEnd={handleTouchEnd}
       onClick={handleClick}
       sx={{
         position: "relative",
@@ -187,19 +204,3 @@ function CarruselBanner() {
 }
 
 export default CarruselBanner;
-
-// CSS for ripple effect
-const styles = `
-@keyframes ripple {
-  to {
-    transform: translate(-50%, -50%) scale(2);
-    opacity: 0;
-  }
-}
-`;
-
-// Add styles globally if necessary
-const styleSheet = document.createElement("style");
-styleSheet.type = "text/css";
-styleSheet.innerText = styles;
-document.head.appendChild(styleSheet);

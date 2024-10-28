@@ -37,19 +37,17 @@ const iconStyles = [
 
 const Footer = () => {
   return (
-    <Box sx={{ padding: "40px 0" }}>
+    <Box>
       <Grid
         container
-        spacing={7}
         sx={{
-          maxWidth: "96vw",
-          padding: "40px 10px",
-          margin: "-28px auto",
+          maxWidth: "100vw",
+          padding: {xs: "40px 30px", md: "80px 80px"},
           backgroundColor: "#0E0610",
-          borderRadius: "25px",
+          borderRadius: "25px 25px 0px 0px",
         }}
       >
-        <Grid item xs={12} md={4} sm={6}>
+        <Grid item xs={12} md={4} sm={6} mb={3}>
           <img
             src={Logo}
             alt="HitPoly Logo"
@@ -70,7 +68,7 @@ const Footer = () => {
           </Typography>
         </Grid>
 
-        <Grid item xs={12} md={2} sm={6}>
+        <Grid item xs={12} md={2} sm={6} mb={3}>
           <Typography variant="body1" color="#c13ce3" gutterBottom>
             ENLACES RÁPIDOS
           </Typography>
@@ -91,7 +89,7 @@ const Footer = () => {
           ))}
         </Grid>
 
-        <Grid item xs={12} md={3} sm={6}>
+        <Grid item xs={12} md={3} sm={6} mb={3}>
           <Typography variant="body1" color="#c13ce3" gutterBottom>
             POLITICAS
           </Typography>
