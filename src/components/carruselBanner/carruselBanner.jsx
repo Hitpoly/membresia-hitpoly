@@ -28,7 +28,7 @@ const bannersData = [
   {
     title: "CONSTRUYE UN LEGADO FAMILIAR",
     subtitle:
-      "Estamos asegurando el futuro de nuestros hijos y nietos, un legado en el que la unión y la colaboración cobran cada vez más fuerza para forjar un porvenir más brillante y equitativo para todos.",
+      "Estamos asegurando el futuro de nuestros hijos y nietos, un legado en el que la unión y la colaboración cobran cada vez más fuerza.",
     buttonText: "Descubrir Más",
     buttonLink: "/",
   },
@@ -182,13 +182,15 @@ function CarruselBanner() {
       {/* Pass current banner data to Targeta */}
       <Box
         sx={{
-          position: "relative",
+          position: "absolute",
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
           padding: "0px 20px",
-          top: { xs: "40%", sm: "50%", md: "35%", lg: "35%" },
-          left: { xs: "0px", sm: "0px", md: "3%" },
+          marginLeft: {xs: "0px", md: "100px"},
+          borderRadius: "25px",
+          boxShadow: "0px 10px 20px rgba(0, 0, 0, 0.15)",
+          bottom: {xs: "50px", md: "80px"},
           width: { xs: "auto", sm: "auto", md: "50%", lg: "50%", xl: "40%" },
         }}
       >
