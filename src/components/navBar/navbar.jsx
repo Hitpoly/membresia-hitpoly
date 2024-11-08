@@ -143,6 +143,26 @@ function NavBar() {
             </List>
             <Box
               sx={{
+                padding: "0px",
+                marginTop: "0px",
+              }}
+            >
+              <AccessButton
+                text="Acceder ahora"
+                onClick={() => {}}
+                sx={{
+                  width: "100%",
+                  color: "#6F4CE0",
+                  borderColor: "#6F4CE0",
+                }}
+                hoverStyles={{
+                  backgroundColor: "#6F4CE0",
+                  color: "white",
+                }}
+              />
+            </Box>
+            <Box
+              sx={{
                 padding: "20px",
                 marginTop: "auto",
               }}

@@ -20,7 +20,7 @@ function Home() {
             left: 0,
             right: 0,
             zIndex: 1000,
-            padding: "10px 40px",
+            padding: {xs: "0px 10px", md: "10px 40px"},
             backgroundColor: "rgba(250, 250, 250, 0.8)",
             borderBottomLeftRadius: "25px",
             borderBottomRightRadius: "25px",
@@ -31,7 +31,7 @@ function Home() {
         <Box
           sx={{
             marginTop: "60px",
-            margin: { xs: "20px 20px", sm: "20px 40px", md: "100px 40px" },
+            margin: { xs: "0px 0px", sm: "20px 40px", md: "100px 40px" },
             overflowX: "hidden",
           }}
         >
