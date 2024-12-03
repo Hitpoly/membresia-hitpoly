@@ -9,7 +9,7 @@ function TargetasTestimonio({ title, content, image }) {
         height: "550px",
         borderRadius: "25px",
         overflow: "hidden",
-        backgroundColor: "white",
+        backgroundColor: "#800080",
         color: "#200E24",
       }}
     >

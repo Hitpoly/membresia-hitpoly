@@ -1,8 +1,8 @@
-import React, { useState, useEffect } from "react";
-import { Box, Typography, IconButton, Link, useTheme, useMediaQuery } from "@mui/material";
-import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
+import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import FiberManualRecordIcon from "@mui/icons-material/FiberManualRecord";
+import { Box, IconButton, Link, Typography, useMediaQuery, useTheme } from "@mui/material";
+import React, { useEffect, useState } from "react";
 
 // Component that displays a carousel of cards
 const Valores = ({
@@ -127,7 +127,7 @@ const Valores = ({
                 color: "white",
                 borderRadius: "50%",
                 "&:hover": {
-                  backgroundColor: "#A018BF",
+                  backgroundColor: "#800080",
                 },
               }}
             >

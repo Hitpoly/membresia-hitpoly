@@ -1,13 +1,13 @@
-import React from "react";
+import AddIcon from "@mui/icons-material/Add";
 import {
-  Box,
-  Container,
-  Typography,
   Accordion,
   AccordionDetails,
   AccordionSummary,
+  Box,
+  Container,
+  Typography,
 } from "@mui/material";
-import AddIcon from "@mui/icons-material/Add";
+import React from "react";
 
 const PreguntasFrecuentes = ({ preguntas }) => {
   return (
@@ -37,7 +37,7 @@ const PreguntasFrecuentes = ({ preguntas }) => {
         <Accordion
           key={index}
           sx={{
-            backgroundColor: "#0E0610",
+            backgroundColor: "#800080",
             color: "white",
             mb: 2,
             borderRadius: "10px",

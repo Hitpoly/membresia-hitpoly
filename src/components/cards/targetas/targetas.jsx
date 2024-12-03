@@ -3,17 +3,17 @@ import PropTypes from 'prop-types';
 
 function Targeta({ title, number, description, customStyles }) {
   return (
-    <Box 
+    <Box
       sx={{
         color: "white",
         height: '280px',
         display: 'flex',
         flexDirection: 'column',
         justifyContent: 'space-between',
-        backgroundColor: '#200E24',
+        backgroundColor: '#800080',
         position: 'relative',
         borderRadius: '25px',
-        ...customStyles, 
+        ...customStyles,
         padding: '30px 20px',
         overflow: 'hidden',
         transition: 'transform 0.9s ease, all 0.9s ease', // Transición para transformación suave
@@ -71,23 +71,23 @@ function Targeta({ title, number, description, customStyles }) {
         }}
       />
 
-      <Box 
-        className="title" 
+      <Box
+        className="title"
         sx={{
-          width: "100%", 
-          display: "flex", 
-          justifyContent: "center", 
-          alignItems: "center", 
-          gap: "10px", 
-          zIndex: 1, 
+          width: "100%",
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          gap: "10px",
+          zIndex: 1,
           transition: 'transform 0.9s ease',
-          flexWrap: 'wrap', 
+          flexWrap: 'wrap',
         }}
       >
-        <Typography 
+        <Typography
           variant="h6"
           sx={{
-            fontWeight: 'bold', 
+            fontWeight: 'bold',
             fontFamily: 'Poppins, sans-serif',
             fontSize: "16px",
             maxWidth: "50%",
@@ -98,11 +98,11 @@ function Targeta({ title, number, description, customStyles }) {
           {title}
         </Typography>
 
-        <Typography 
-          variant="h6" 
-          sx={{ 
-            fontSize: '6rem', 
-            fontWeight: 'bold', 
+        <Typography
+          variant="h6"
+          sx={{
+            fontSize: '6rem',
+            fontWeight: 'bold',
             fontFamily: 'Poppins, sans-serif',
             transition: 'all 0.6s ease',
           }}
@@ -113,10 +113,10 @@ function Targeta({ title, number, description, customStyles }) {
 
       <Box className="description" sx={{ zIndex: 1, borderRadius: "25px", transition: 'transform 0.9s ease' }}>
         <Typography variant="subtitle1" sx={{
-            fontFamily: 'Poppins, sans-serif',
-            fontSize: "14px",
-            padding: "0px 25px",
-          }}>
+          fontFamily: 'Poppins, sans-serif',
+          fontSize: "14px",
+          padding: "0px 25px",
+        }}>
           {description}
         </Typography>
       </Box>

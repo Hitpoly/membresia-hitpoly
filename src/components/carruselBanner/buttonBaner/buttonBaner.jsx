@@ -22,7 +22,7 @@ function ButtonBaner({ text, href, buttonStyles }) {
           pointerEvents: "click",
           transition: "background-color 0.3s ease, color 0.3s ease",
           "&:hover": {
-            backgroundColor: "#6F4CE0",
+            backgroundColor: "#800080",
             color: "#fff",
             "& .circle": {
               backgroundColor: "#fff", // Cambia el color de fondo del círculo al hacer hover
@@ -43,7 +43,7 @@ function ButtonBaner({ text, href, buttonStyles }) {
             width: "35px",
             height: "35px",
             borderRadius: "50%",
-            backgroundColor: "#6F4CE0",
+            backgroundColor: "#800080",
             marginRight: "15px",
             transition: "background-color 0.3s ease",
           }}

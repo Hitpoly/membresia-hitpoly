@@ -1,11 +1,11 @@
-import React from "react";
-import { Box, Grid, Typography, Link, IconButton } from "@mui/material";
-import Logo from "../../assets/logohitpolyblanco.png";
-import InstagramIcon from "@mui/icons-material/Instagram";
 import FacebookIcon from "@mui/icons-material/Facebook";
+import InstagramIcon from "@mui/icons-material/Instagram";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import YouTubeIcon from "@mui/icons-material/YouTube";
+import { Box, Grid, IconButton, Link, Typography } from "@mui/material";
+import React from "react";
+import Logo from "../../assets/logohitpolyblanco.png";
 
 const iconStyles = [
   {
@@ -42,8 +42,8 @@ const Footer = () => {
         container
         sx={{
           maxWidth: "100vw",
-          padding: {xs: "40px 30px", md: "80px 80px"},
-          backgroundColor: "#0E0610",
+          padding: { xs: "40px 30px", md: "80px 80px" },
+          backgroundColor: "#800080",
           borderRadius: "25px 25px 0px 0px",
         }}
       >
@@ -164,7 +164,7 @@ const Footer = () => {
           >
             <Typography
               variant="body2"
-              color="#c13ce3"
+              color="white"
               sx={{
                 marginTop: "30px",
                 textAlign: { xs: "center", md: "left" },
