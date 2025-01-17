@@ -94,7 +94,7 @@ const Acordeon = ({ tabs, containerStyles, buttonStyles, contentStyles }) => {
               borderRadius: "25px",
               fontWeight: 600,
               fontSize: "12px",
-              backgroundColor: activeTab === tab ? "#200E24" : "#fff",
+              backgroundColor: activeTab === tab ? "#6F4CE0" : "#fff",
               color: activeTab === tab ? "white" : "#200E24",
               transition: "color 0.3s ease, background-color 0.3s ease",
               fontFamily: "Poppins, sans-serif",
@@ -105,13 +105,13 @@ const Acordeon = ({ tabs, containerStyles, buttonStyles, contentStyles }) => {
               ...buttonStyles,
             }}
             onMouseEnter={(e) => {
-              e.target.style.backgroundColor = "#200E24";
+              e.target.style.backgroundColor = "#6F4CE0";
               e.target.style.color = "white";
             }}
             onMouseLeave={(e) => {
               if (activeTab !== tab) {
                 e.target.style.backgroundColor = "#fff";
-                e.target.style.color = "#200E24";
+                e.target.style.color = "#6F4CE0";
               }
             }}
           >

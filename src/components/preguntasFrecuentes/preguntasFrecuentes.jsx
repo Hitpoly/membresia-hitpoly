@@ -37,7 +37,7 @@ const PreguntasFrecuentes = ({ preguntas }) => {
         <Accordion
           key={index}
           sx={{
-            backgroundColor: "#800080",
+            backgroundColor: "#6F4CE0",
             color: "white",
             mb: 2,
             borderRadius: "10px",

@@ -10,21 +10,21 @@ const ValoresHome = () => {
     {
       title: "MISIÓN DE LA MEMBRESÍA",
       description:
-        "Nuestra misión es proporcionar a nuestros afiliados herramientas innovadoras para que puedan generar ingresos sostenibles mediante la venta de servicios y productos digitales de alta calidad.",
+        "Empoderar a nuestros afiliados con herramientas digitales avanzadas, permitiéndoles comercializar soluciones de marketing y desarrollo de software mientras construyen ingresos sólidos y sostenibles.",
       imageUrl: imagenPrimera,
       linkHref: "https://www.hitpoly.com",
     },
     {
       title: "VISIÓN DE LA MEMBRESÍA",
       description:
-        "Ser la red de marketing digital más sólida y confiable, que potencie el crecimiento personal y financiero de nuestros miembros mediante un sistema de compensación justo y eficiente.",
+        "Ser el sistema líder en soluciones digitales, transformando vidas al ofrecer oportunidades únicas de capitalización y crecimiento profesional en un entorno seguro y confiable.",
       imageUrl: imagenSegunda,
       linkHref: "https://www.hitpoly.com",
     },
     {
       title: "VALORES DE LA MEMBRESÍA",
       description:
-        "Nuestros valores fundamentales son la innovación, la integridad, y el compromiso con el éxito de nuestros afiliados, brindando siempre transparencia y soporte en cada paso del proceso.",
+        "Fomentamos la innovación, la confianza y el compromiso, proporcionando transparencia y apoyo constante para garantizar el éxito de cada afiliado en nuestro ecosistema.",
       imageUrl: imagenTercera,
       linkHref: "https://www.hitpoly.com",
     },
@@ -39,13 +39,7 @@ const ValoresHome = () => {
     link: { textDecoration: "underline" },
   };
 
-  return (
-    <Valores 
-      cards={cardData} 
-      interval={interval} 
-      styles={styles} 
-    />
-  );
+  return <Valores cards={cardData} interval={interval} styles={styles} />;
 };
 
 export default ValoresHome;

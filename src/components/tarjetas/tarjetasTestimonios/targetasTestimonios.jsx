@@ -9,7 +9,7 @@ function TargetasTestimonio({ title, content, image }) {
         height: "550px",
         borderRadius: "25px",
         overflow: "hidden",
-        backgroundColor: "#800080",
+        backgroundColor: "#6F4CE0",
         color: "#200E24",
       }}
     >
@@ -73,7 +73,7 @@ function TargetasTestimonio({ title, content, image }) {
           sx={{
             fontWeight: "bold",
             fontFamily: "Poppins, sans-serif",
-            color: "#200E24",
+            color: "#FFF",
             fontSize: "20px",
             marginBottom: "10px",
           }}
@@ -85,7 +85,7 @@ function TargetasTestimonio({ title, content, image }) {
           sx={{
             width: "95%",
             fontFamily: "Poppins, sans-serif",
-            color: "#200E24",
+            color: "#FFF",
             fontSize: "14px",
           }}
         >

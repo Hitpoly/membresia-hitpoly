@@ -1,43 +1,51 @@
-import Cards from '../../../components/cards/cards.jsx';
-import { Box } from '@mui/material';
+import Cards from "../../../components/cards/cards.jsx";
+import { Box } from "@mui/material";
 
 const cardData = [
   {
-    title: "IMPULSA TU ÉXITO CON UN SISTEMA EFECTIVO",
+    title: "¡GANA DINERO DESDE EL DÍA 1 CON EL SISTEMA MÁS INNOVADOR!",
     number: "01",
-    description: "Construye un negocio rentable y flexible utilizando un sistema diseñado para maximizar tu rendimiento. Te brindamos las herramientas necesarias para que alcances tus metas de manera efectiva.",
+    description:
+      "Únete a nuestra red global y empieza a ganar dinero desde el primer mes. Con nuestro sistema único de marketing digital, tendrás todo lo necesario para comenzar. No necesitas experiencia previa, solo compromiso y el respaldo de nuestra plataforma.",
   },
   {
-    title: "TRANSFORMA TU NEGOCIO CON HERRAMIENTAS POTENTES",
+    title: "GENERA INGRESOS AUTOMÁTICOS CON ESTRATEGIAS DIGITALES AVANZADAS",
     number: "02",
-    description: "Aprovecha las herramientas avanzadas a tu disposición para optimizar tus operaciones. Descubre cómo podemos facilitar tus procesos y liberar tiempo para lo que realmente importa.",
+    description:
+      "Usa nuestras herramientas exclusivas para captar clientes y generar ventas. Con campañas automáticas y contenido listo para usar, tendrás todo lo necesario para aumentar tus ingresos sin perder tiempo en lo complicado.",
   },
   {
-    title: "ESTRATEGIAS DE CRECIMIENTO ONLINE",
+    title: "CRECE EN LA INDUSTRIA DIGITAL Y MULTIPLICA TUS GANANCIAS",
     number: "03",
-    description: "Te ayudamos con estrategias de marketing digital efectivas para aumentar tu presencia en línea. Atrae más tráfico y convierte a los visitantes en aliados leales.",
+    description:
+      "Es el momento de construir tu propio imperio digital. Con nuestra capacitación y soporte, aprenderás a atraer clientes y liderar tu equipo, generando ingresos pasivos con una estructura simple pero potente.",
   },
   {
-    title: "CREA UNA CULTURA DE INNOVACIÓN",
+    title: "CONVIÉRTETE EN UN LÍDER Y MULTIPLICA TUS OPORTUNIDADES DE GANAR",
     number: "04",
-    description: "Fomentamos un entorno creativo que potencie el desarrollo de ideas frescas e innovadoras. Estás en una cultura organizacional donde la innovación es parte de nuestro ADN.",
+    description:
+      "Gana dinero no solo por tu trabajo, sino también por el esfuerzo de tu equipo. Conviértete en líder, enseña a tu red a tener éxito y genera ingresos pasivos mientras otros crecen junto a ti.",
   },
   {
-    title: "IMPULSA TU MARCA PERSONAL",
+    title: "CREA UNA MARCA PERSONAL Y CONQUISTA EL MERCADO",
     number: "05",
-    description: "Te ayudamos a desarrollar tu marca personal para destacar en el mercado. Te enseñamos a utilizar las herramientas y estrategias a tu alcance para construir una presencia fuerte y auténtica.",
+    description:
+      "Construye una presencia digital única y destaca como líder en marketing multinivel. Te enseñamos a crear tu marca personal, atraer seguidores leales y convertirte en un referente en tu industria.",
   },
   {
-    title: "GANA MUCHO DINERO Y PREMIOS POR LOGROS ALCANZADOS",
+    title: "GANANCIAS EXPONENCIALES Y PREMIOS POR CADA LOGRO",
     number: "06",
-    description: "Somos un mundo de oportunidades. Con cada meta alcanzada, no solo incrementarás tus ingresos, sino que también te podrás llevar increíbles premios.",
+    description:
+      "Cada paso que das te acerca más a mayores ingresos. No solo ganarás dinero por tus ventas, sino que también recibirás premios exclusivos por alcanzar tus metas. Tu esfuerzo será recompensado de forma continua.",
   },
 ];
 
+
 function CardHome() {
   const headerProps = {
-    title: "SOMOS UN ENTORNO DE CAPITALIZACIÓN EFECTIVO",
-    subtitle: "En Hitpoly, no solo ofrecemos acceso a herramientas; te brindamos un enfoque integral y personalizado. Nuestro compromiso es acompañarte en cada paso, desarrollando estrategias innovadoras y adaptadas a tus necesidades específicas para maximizar tu crecimiento y tu éxito."
+    title: "SOMOS UN ENTORNO DE CAPITALIZACIÓN SEGURA",
+    subtitle:
+      "En Hitpoly, no solo ofrecemos acceso a herramientas; te brindamos un enfoque integral y personalizado. Nuestro compromiso es acompañarte en cada paso, desarrollando estrategias innovadoras y adaptadas a tus necesidades específicas para maximizar tu crecimiento y tu éxito.",
   };
 
   return (
@@ -47,9 +55,9 @@ function CardHome() {
         cardData={cardData}
         headerStyles={{ padding: "0px" }} // Estilos personalizados para la cabecera
         cardStyles={{
-          display: 'flex',
-          borderRadius: '25px', // Bordes redondeados
-        }} 
+          display: "flex",
+          borderRadius: "25px", // Bordes redondeados
+        }}
       />
     </Box>
   );

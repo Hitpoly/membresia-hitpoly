@@ -37,14 +37,18 @@ const iconStyles = [
 
 const Footer = () => {
   return (
-    <Box>
+    <Box
+      sx={{
+        padding: { xs: "40px 30px", md: "20px 80px" },
+        backgroundColor: "#6F4CE0",
+        maxWidth: "100vw",
+        borderRadius: "25px 25px 0px 0px",
+      }}
+    >
       <Grid
         container
         sx={{
-          maxWidth: "100vw",
-          padding: { xs: "40px 30px", md: "80px 80px" },
-          backgroundColor: "#800080",
-          borderRadius: "25px 25px 0px 0px",
+          marginTop: "60px"
         }}
       >
         <Grid item xs={12} md={4} sm={6} mb={3}>
@@ -69,31 +73,38 @@ const Footer = () => {
         </Grid>
 
         <Grid item xs={12} md={2} sm={6} mb={3}>
-          <Typography variant="body1" color="#c13ce3" gutterBottom>
+          <Typography variant="body1" color="#fff" gutterBottom>
             ENLACES RÁPIDOS
           </Typography>
-          {["Home", "Portfolio", "Blog", "Nosotros", "Contacto"].map((link, index) => (
-            <Link
-              key={index}
-              href="/"
-              color="#ffffff"
-              underline="none"
-              display="block"
-              sx={{
-                marginBottom: "10px",
-                fontSize: { xs: "0.875rem", sm: "1rem", md: "0.9375rem" },
-              }}
-            >
-              {link}
-            </Link>
-          ))}
+          {["Home", "Portfolio", "Blog", "Nosotros", "Contacto"].map(
+            (link, index) => (
+              <Link
+                key={index}
+                href="/"
+                color="#ffffff"
+                underline="none"
+                display="block"
+                sx={{
+                  marginBottom: "10px",
+                  fontSize: { xs: "0.875rem", sm: "1rem", md: "0.9375rem" },
+                }}
+              >
+                {link}
+              </Link>
+            )
+          )}
         </Grid>
 
         <Grid item xs={12} md={3} sm={6} mb={3}>
-          <Typography variant="body1" color="#c13ce3" gutterBottom>
+          <Typography variant="body1" color="#fff" gutterBottom>
             POLITICAS
           </Typography>
-          {["Politicas de privacidad", "Descargo de responsabilidad", "Terminos y condiciones", "Copyright"].map((policy, index) => (
+          {[
+            "Politicas de privacidad",
+            "Descargo de responsabilidad",
+            "Terminos y condiciones",
+            "Copyright",
+          ].map((policy, index) => (
             <Link
               key={index}
               href="/"
@@ -111,7 +122,7 @@ const Footer = () => {
         </Grid>
 
         <Grid item xs={12} md={3} sm={6}>
-          <Typography variant="body1" color="#c13ce3" gutterBottom>
+          <Typography variant="body1" color="#fff" gutterBottom>
             CONTACTOS
           </Typography>
           <Link
@@ -123,7 +134,14 @@ const Footer = () => {
               fontSize: { xs: "0.875rem", sm: "1rem", md: "0.9375rem" },
             }}
           >
-            <Typography variant="body1" sx={{ color: "#ffffff", marginBottom: { xs: "10px", sm: "10px" }, fontSize: { xs: "0.875rem", sm: "1rem", md: "0.9375rem" } }}>
+            <Typography
+              variant="body1"
+              sx={{
+                color: "#ffffff",
+                marginBottom: { xs: "10px", sm: "10px" },
+                fontSize: { xs: "0.875rem", sm: "1rem", md: "0.9375rem" },
+              }}
+            >
               +51933961352
             </Typography>
           </Link>
@@ -200,7 +218,7 @@ const Footer = () => {
                       width: 36,
                       height: 36,
                       borderRadius: "8px",
-                      marginTop: "30px",
+                      marginTop: "0px",
                     }}
                   >
                     {icon}

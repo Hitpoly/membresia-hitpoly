@@ -14,24 +14,26 @@ const images = {
 
 const tabs = {
   economica: {
-    title: "REACTIVACIÓN ECONÓMICA",
+    title: "IMPACTO ECONÓMICO",
     subtitle:
-      "Ya sea que estés comenzando o busques expandir tus horizontes, ofrecemos las herramientas necesarias para que empieces a capitalizar de inmediato. Comparte la oportunidad con otros y genera ingresos pasivos al instante por afiliar a nuevos miembros. Aquí, tu éxito es nuestro compromiso.",
+      "Impulsa tus ingresos con un sistema que combina tecnología y estrategias digitales. Diseñado para que obtengas resultados inmediatos mientras creas un futuro financiero sostenible. Aquí, tu éxito es parte de nuestra misión.",
     image: images.economica,
   },
   educacion: {
-    title: "EDUCACIÓN PARA EL FUTURO",
+    title: "APRENDIZAJE TRANSFORMADOR",
     subtitle:
-      "Desarrollamos programas educativos innovadores que te enseñan a gestionar tu propia agencia de soluciones digitales. Aprende a utilizar nuestra producción y maximiza tus oportunidades de crecimiento en un entorno seguro y eficiente. Conviértete en un experto y ayuda a otros a hacer lo mismo.",
+      "Domina habilidades digitales con programas educativos diseñados para el éxito. Aprende a gestionar herramientas innovadoras y a construir tu negocio digital con confianza, marcando un nuevo estándar en el emprendimiento.",
     image: images.educacion,
   },
   empresarial: {
-    title: "CRECIMIENTO EMPRESARIAL",
+    title: "COMERCIALIZA SOLUCIONES DIGITALES",
     subtitle:
-      "Somos un ecosistema de crecimiento colaborativo: las marcas se benefician de soluciones digitales eficientes, mientras que los productores y comercializadores capitalizan en el mercado digital. Al final, todos avanzamos juntos hacia el éxito, en un modelo donde cada afiliado aporta y se beneficia del crecimiento colectivo.",
+      "Como parte de Hitpoly, tendrás la oportunidad de ofrecer a marcas y empresas soluciones de marketing digital y desarrollo de software, ayudándolas a capitalizar en internet de manera segura y efectiva. Además, podrás compartir esta oportunidad única, expandiendo tus ingresos y construyendo una red comercial que te llevara al camino  del éxito.",
     image: images.empresarial,
   },
+
 };
+
 
 const containerStyles = {};
 const buttonStyles = {};

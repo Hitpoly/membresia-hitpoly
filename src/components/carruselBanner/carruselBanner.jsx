@@ -12,27 +12,29 @@ const images = [image1, image2, image3];
 // Data for the banners
 const bannersData = [
   {
-    title: "TU PROPIA AGENCIA DE SOLUCIONES DIGITALES",
+    title: "INNOVACIÓN QUE TRANSFORMA",
     subtitle:
-      "Impulsamos a tus clientes hacia retornos rápidos y seguros, asegurando una capitalización efectiva en plazos cortos.",
+      "Accede a soluciones digitales de vanguardia que te posicionan como líder en la nueva era del emprendimiento.",
     buttonText: "Descubrir Más",
     buttonLink: "/",
   },
   {
-    title: "DISFRUTA AYUDANDO A QUE OTROS VIVAN MEJOR",
+    title: "CRECIMIENTO ASEGURADO",
     subtitle:
-      "Estamos ayudando a que más personas puedan generar ingresos en línea, todo desde un centro de capitalización seguro y efectivo.",
+      "Un sistema diseñado para que obtengas resultados medibles desde el primer mes, con herramientas que potencian tu éxito.",
     buttonText: "Descubrir Más",
     buttonLink: "/",
   },
   {
-    title: "CONSTRUYE UN LEGADO FAMILIAR",
+    title: "UN CAMINO HACIA LA INDEPENDENCIA",
     subtitle:
-      "Estamos asegurando el futuro de nuestros hijos y nietos, un legado en el que la unión y la colaboración cobran cada vez más fuerza.",
+      "Construye un futuro sólido con oportunidades que combinan tecnología, conocimiento y capitalización efectiva.",
     buttonText: "Descubrir Más",
     buttonLink: "/",
   },
 ];
+
+
 
 function CarruselBanner() {
   const [currentIndex, setCurrentIndex] = useState(0);
