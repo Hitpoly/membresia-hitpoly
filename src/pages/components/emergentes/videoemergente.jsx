@@ -12,13 +12,13 @@ const VideoModal = ({ open, onClose, videoUrl, title, description }) => {
           top: "50%",
           left: "50%",
           transform: "translate(-50%, -50%)",
-          width: { xs: "90%", sm: "70%", md: "50%" },
+          width: { xs: "80%", sm: "70%", md: "50%" },
           bgcolor: "background.paper",
           boxShadow: 24,
           borderRadius: 2,
           overflow: "hidden",
           p: 3,
-          color: "black"
+          color: "black",
         }}
       >
         {/* Cerrar */}
