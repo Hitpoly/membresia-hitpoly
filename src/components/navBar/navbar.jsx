@@ -24,8 +24,8 @@ function NavBar() {
     { label: "OPORTUNIDAD ÚNICA", sectionId: "section1" },
     { label: "NUESTRO PROPÓSITO", sectionId: "section2" },
     { label: "CONÓCENOS", sectionId: "section3" },
-    { label: "TESTIMONIOS", sectionId: "section4" },
-    { label: "FORMAS DE CAPITALIZAR", sectionId: "section5" },
+
+    { label: "PREGUNTAS FRECUENTES", sectionId: "section5" },
   ];
 
   const toggleDrawer = (open) => () => {
@@ -52,23 +52,19 @@ function NavBar() {
             <Navigation menuItems={menuItems} />
           </Box>
         ) : (
-          <IconButton
-            onClick={toggleDrawer(true)}
-            sx={{ color: "#6F4CE0" }}
-          >
+          <IconButton onClick={toggleDrawer(true)} sx={{ color: "#6F4CE0" }}>
             <MenuIcon />
           </IconButton>
         )}
 
         {!isMobile && (
           <>
-            <AccessButton
-              text="Acceder Ahora"
-              onClick={() => {}}
-            />
+            <AccessButton text="Acceder Ahora" onClick={() => {}} />
             <BottonSuport
               text="Atención al Cliente"
-              onClick={() => {}}
+              onClick={() => {
+                window.location.href = "https://wa.me/51933961352";
+              }}
               sx={{
                 color: "#6F4CE0",
                 borderColor: "#6F4CE0",
@@ -95,7 +91,10 @@ function NavBar() {
             onKeyDown={toggleDrawer(false)}
           >
             <Box sx={{ display: "flex", padding: "10px" }}>
-              <IconButton onClick={toggleDrawer(false)} sx={{ color: "#6F4CE0" }}>
+              <IconButton
+                onClick={toggleDrawer(false)}
+                sx={{ color: "#6F4CE0" }}
+              >
                 <CloseIcon />
               </IconButton>
             </Box>

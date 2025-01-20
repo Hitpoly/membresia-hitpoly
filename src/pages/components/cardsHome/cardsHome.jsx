@@ -3,7 +3,7 @@ import { Box } from "@mui/material";
 
 const cardData = [
   {
-    title: "¡GANA DINERO DESDE EL DÍA 1 CON EL SISTEMA MÁS INNOVADOR!",
+    title: "¡GANA DINERO DESDE EL MES 1 CON EL SISTEMA MÁS INNOVADOR!",
     number: "01",
     description:
       "Únete a nuestra red global y empieza a ganar dinero desde el primer mes. Con nuestro sistema único de marketing digital, tendrás todo lo necesario para comenzar. No necesitas experiencia previa, solo compromiso y el respaldo de nuestra plataforma.",

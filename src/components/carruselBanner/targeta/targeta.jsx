@@ -1,7 +1,21 @@
 import { Box, Typography } from "@mui/material";
+import { useState } from "react"; // Importa useState
 import ButtonBaner from "../buttonBaner/buttonBaner.jsx"; // Cambiar a .jsx si es necesario
+import VideoModal from "../../../pages/components/emergentes/videoemergente.jsx"; // Importar el componente VideoModal
 
-function Targeta({ title, subtitle, buttonText, buttonLink }) {
+function Targeta({ title, subtitle }) {
+  const [open, setOpen] = useState(false); // Estado para abrir/cerrar el modal
+
+  // Función que maneja el clic en el botón
+  const manejarClic = () => {
+    setOpen(true); // Cambiar el estado a true para abrir el modal
+  };
+
+  // Función para cerrar el modal
+  const cerrarModal = () => {
+    setOpen(false); // Cambiar el estado a false para cerrar el modal
+  };
+
   return (
     <Box
       sx={{
@@ -22,7 +36,7 @@ function Targeta({ title, subtitle, buttonText, buttonLink }) {
         sx={{
           mb: 1,
           fontFamily: "Poppins, sans-serif",
-          fontSize: { xs: "30px", sm: "30px", md: "35px", lg: "40px" }, // Ajustar tamaño de fuente del título
+          fontSize: { xs: "30px", sm: "30px", md: "35px", lg: "40px" },
           fontWeight: "bold",
           width: "90%",
         }}
@@ -35,15 +49,24 @@ function Targeta({ title, subtitle, buttonText, buttonLink }) {
           width: "90%",
           mb: 2,
           fontFamily: "Poppins, sans-serif",
-          fontSize: { xs: "13px", sm: "14px", md: "15px" }, // Ajustar tamaño de fuente del subtítulo
+          fontSize: { xs: "13px", sm: "14px", md: "15px" },
         }}
       >
         {subtitle}
       </Typography>
       <ButtonBaner
-        text={buttonText} // Texto del botón dinámico
-        href={buttonLink} // Enlace del botón dinámico
-        buttonStyles={{ marginTop: "10px" }} // Si necesitas estilos adicionales
+        text="Ver Video"
+        onClick={manejarClic} // Llamada a la función al hacer clic
+        buttonStyles={{ marginTop: "10px" }}
+      />
+
+      {/* Renderizamos VideoModal cuando el estado es true */}
+      <VideoModal
+        open={open}
+        onClose={cerrarModal} // Pasamos la función para cerrar el modal
+        videoUrl="https://www.youtube.com/embed/ADLdqwDCS1A" // URL del video
+        title="Somos el primer sistema de network marketing basado en soluciones digitales."
+        description="Ayudamos a que profesionales como tú, puedan capitalizar en internet, ayudando a que tanto marcas y empresas puedan crecer de forma sostenible en internet."
       />
     </Box>
   );

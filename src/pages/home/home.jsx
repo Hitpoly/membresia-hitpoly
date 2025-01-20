@@ -73,18 +73,6 @@ function Home() {
           <CardHome />
         </Box>
         <Box
-          id="section4"
-          sx={{
-            backgroundColor: "#D9D9D9",
-            padding: "60px 0px",
-            overflowX: "hidden",
-            display: "flex",
-            justifyContent: "space-between",
-          }}
-        >
-          <TestimoniosHome />
-        </Box>
-        <Box
           sx={{
             padding: "60px 100px",
             overflowX: "hidden",

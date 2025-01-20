@@ -76,38 +76,16 @@ const Footer = () => {
           <Typography variant="body1" color="#fff" gutterBottom>
             ENLACES RÁPIDOS
           </Typography>
-          {["Home", "Portfolio", "Blog", "Nosotros", "Contacto"].map(
-            (link, index) => (
-              <Link
-                key={index}
-                href="/"
-                color="#ffffff"
-                underline="none"
-                display="block"
-                sx={{
-                  marginBottom: "10px",
-                  fontSize: { xs: "0.875rem", sm: "1rem", md: "0.9375rem" },
-                }}
-              >
-                {link}
-              </Link>
-            )
-          )}
-        </Grid>
-
-        <Grid item xs={12} md={3} sm={6} mb={3}>
-          <Typography variant="body1" color="#fff" gutterBottom>
-            POLITICAS
-          </Typography>
           {[
-            "Politicas de privacidad",
-            "Descargo de responsabilidad",
-            "Terminos y condiciones",
-            "Copyright",
-          ].map((policy, index) => (
+            { text: "Home", link: "/" },
+            { text: "Portfolio", link: "https://hitpoly.com/portfolio" },
+            { text: "Blog", link: "https://blog.hitpoly.com/" },
+            { text: "Nosotros", link: "https://hitpoly.com/nosotros" },
+            { text: "Contacto", link: "/contacto" }
+          ].map((link, index) => (
             <Link
               key={index}
-              href="/"
+              href={link.link} // Usar el enlace dinámico
               color="#ffffff"
               underline="none"
               display="block"
@@ -116,7 +94,33 @@ const Footer = () => {
                 fontSize: { xs: "0.875rem", sm: "1rem", md: "0.9375rem" },
               }}
             >
-              {policy}
+              {link.text}
+            </Link>
+          ))}
+        </Grid>
+
+        <Grid item xs={12} md={3} sm={6} mb={3}>
+          <Typography variant="body1" color="#fff" gutterBottom>
+            POLITICAS
+          </Typography>
+          {[
+            { text: "Politicas de privacidad", link: "/https://hitpoly.com/privacypolicy" },
+            { text: "Descargo de responsabilidad", link: "https://hitpoly.com/disclaimer" },
+            { text: "Terminos y condiciones", link: "https://hitpoly.com/termsandconditions" },
+            { text: "Copyright", link: "https://hitpoly.com/Copyright" }
+          ].map((policy, index) => (
+            <Link
+              key={index}
+              href={policy.link} // Usar el enlace dinámico
+              color="#ffffff"
+              underline="none"
+              display="block"
+              sx={{
+                marginBottom: "10px",
+                fontSize: { xs: "0.875rem", sm: "1rem", md: "0.9375rem" },
+              }}
+            >
+              {policy.text}
             </Link>
           ))}
         </Grid>

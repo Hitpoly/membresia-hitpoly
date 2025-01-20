@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Box } from "@mui/material";
-import Targeta from "./targeta/targeta.jsx";
+import Targeta from "./targeta/targeta.jsx"; // Asegúrate de que el path sea correcto
 
 // Import local images
 import image1 from "../../assets/imagenUnoBaner.jpg";
@@ -15,26 +15,18 @@ const bannersData = [
     title: "INNOVACIÓN QUE TRANSFORMA",
     subtitle:
       "Accede a soluciones digitales de vanguardia que te posicionan como líder en la nueva era del emprendimiento.",
-    buttonText: "Descubrir Más",
-    buttonLink: "/",
   },
   {
     title: "CRECIMIENTO ASEGURADO",
     subtitle:
       "Un sistema diseñado para que obtengas resultados medibles desde el primer mes, con herramientas que potencian tu éxito.",
-    buttonText: "Descubrir Más",
-    buttonLink: "/",
   },
   {
     title: "UN CAMINO HACIA LA INDEPENDENCIA",
     subtitle:
       "Construye un futuro sólido con oportunidades que combinan tecnología, conocimiento y capitalización efectiva.",
-    buttonText: "Descubrir Más",
-    buttonLink: "/",
   },
 ];
-
-
 
 function CarruselBanner() {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -189,18 +181,16 @@ function CarruselBanner() {
           justifyContent: "center",
           alignItems: "center",
           padding: "0px 20px",
-          marginLeft: {xs: "0px", md: "100px"},
+          marginLeft: { xs: "0px", md: "100px" },
           borderRadius: "25px",
           boxShadow: "0px 10px 20px rgba(0, 0, 0, 0.15)",
-          bottom: {xs: "50px", md: "80px"},
+          bottom: { xs: "50px", md: "80px" },
           width: { xs: "auto", sm: "auto", md: "50%", lg: "50%", xl: "40%" },
         }}
       >
         <Targeta
           title={bannersData[currentIndex].title}
           subtitle={bannersData[currentIndex].subtitle}
-          buttonText={bannersData[currentIndex].buttonText}
-          buttonLink={bannersData[currentIndex].buttonLink}
         />
       </Box>
     </Box>

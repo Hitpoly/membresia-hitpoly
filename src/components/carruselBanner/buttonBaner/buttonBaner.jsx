@@ -1,11 +1,11 @@
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward"; // Importa el ícono
 import { Box, Button } from "@mui/material";
 
-function ButtonBaner({ text, href, buttonStyles }) {
+function ButtonBaner({ text, onClick, buttonStyles }) { // Agregar la propiedad onClick
   return (
     <Box>
       <Button
-        href={href}
+        onClick={onClick} // Usar onClick para manejar la apertura del modal
         sx={{
           backgroundColor: "#fff",
           width: "100%",
