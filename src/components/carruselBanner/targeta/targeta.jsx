@@ -49,13 +49,13 @@ function Targeta({ title, subtitle }) {
           width: "90%",
           mb: 2,
           fontFamily: "Poppins, sans-serif",
-          fontSize: { xs: "13px", sm: "14px", md: "15px" },
+          fontSize: { xs: "1rem", md: "1rem" },
         }}
       >
         {subtitle}
       </Typography>
       <ButtonBaner
-        text="Ver Video"
+        text="Ver más"
         onClick={manejarClic} // Llamada a la función al hacer clic
         buttonStyles={{ marginTop: "10px" }}
       />
