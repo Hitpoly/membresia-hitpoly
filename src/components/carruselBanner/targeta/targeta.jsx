@@ -65,8 +65,8 @@ function Targeta({ title, subtitle }) {
         open={open}
         onClose={cerrarModal} // Pasamos la función para cerrar el modal
         videoUrl="https://www.youtube.com/embed/ADLdqwDCS1A" // URL del video
-        title="Somos el primer sistema de network marketing basado en soluciones digitales."
-        description="Ayudamos a que profesionales como tú, puedan capitalizar en internet, ayudando a que tanto marcas y empresas puedan crecer de forma sostenible en internet."
+        title="Somos el primer sistema de network marketing basado en soluciones de Marketing Digital y desarrollo de software."
+        description="Ayudamos a que profesionales como tú, puedan capitalizar en internet, ayudando a que tanto marcas y empresas puedan crecer de forma sostenible en esta nueva era digital"
       />
     </Box>
   );

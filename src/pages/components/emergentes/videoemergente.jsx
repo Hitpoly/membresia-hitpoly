@@ -32,17 +32,39 @@ const VideoModal = ({ open, onClose, videoUrl, title, description }) => {
         <VideoPersonalizado url={videoUrl} borderRadius={8} />
 
         {/* Título */}
-        <Typography variant="h6" sx={{ mt: 2, fontWeight: "bold" }}>
+        <Typography
+          variant="h6"
+          sx={{
+            mt: 2,
+            fontWeight: "bold",
+            fontFamily: "'Poppins', sans-serif",
+          }}
+        >
           {title}
         </Typography>
 
         {/* Descripción */}
-        <Typography variant="body1" sx={{ mt: 1, mb: 2 }}>
+        <Typography
+          variant="body1"
+          sx={{
+            mt: 1,
+            mb: 2,
+            fontFamily: "'Poppins', sans-serif",
+          }}
+        >
           {description}
         </Typography>
 
         {/* Botón para cerrar */}
-        <Button variant="outlined" color="secondary" onClick={onClose} fullWidth>
+        <Button
+          variant="outlined"
+          color="secondary"
+          onClick={onClose}
+          fullWidth
+          sx={{
+            fontFamily: "'Poppins', sans-serif",
+          }}
+        >
           Cerrar
         </Button>
       </Box>

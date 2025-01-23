@@ -14,11 +14,6 @@ const iconStyles = [
     link: "https://www.instagram.com/hitpoly/",
   },
   {
-    icon: <FacebookIcon />,
-    backgroundColor: "#B51AD8",
-    link: "https://www.facebook.com/Hitpoly",
-  },
-  {
     icon: <LinkedInIcon />,
     backgroundColor: "#B51AD8",
     link: "https://pe.linkedin.com/company/hitpoly",
