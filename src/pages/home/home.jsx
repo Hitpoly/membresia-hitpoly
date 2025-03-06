@@ -8,8 +8,29 @@ import TestimoniosHome from "../components/testimoniosHome/testimoniosHome.jsx";
 import ContadorHome from "../components/contadorHome/contadorHome.jsx";
 import PreguntasFrecuentesHome from "../components/preguntasFrecuentesHome/preguntasFrecuentesHome.jsx";
 import FooterHome from "../components/footerHome/page.jsx";
+import { useEffect, useState } from "react";
+import { useLocation } from "react-router-dom";
 
 function Home() {
+
+  const location = useLocation();
+  const [userId, setUserId] = useState(null);
+
+
+  useEffect(() => {
+    const params = new URLSearchParams(location.search);
+    const encodedUserId = params.get("userId");
+
+    if (encodedUserId) {
+      try {
+        const decodedUserId = atob(encodedUserId);
+        setUserId(decodedUserId);
+      } catch (error) {
+        console.error("Error decoding userId:", error);
+      }
+    }
+  }, [location.search]);
+
   return (
     <>
       <Box sx={{ width: "100%" }}>
@@ -26,7 +47,7 @@ function Home() {
             borderBottomRightRadius: "25px",
           }}
         >
-          <NavBar />
+          <NavBar   userId={userId} />
         </Box>
         <Box
           sx={{

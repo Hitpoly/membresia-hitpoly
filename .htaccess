@@ -1,0 +1,14 @@
+# Habilitar el módulo de reescritura
+RewriteEngine On
+
+# Asegurarse de que no se modifiquen archivos o directorios reales
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Permitir el acceso a los directorios ajax, modelos, y vender
+RewriteRule ^(ajax|modelos|vendor)/ - [L]
+
+# Redirigir todas las demás solicitudes a index.php (opcional)
+# Esto es útil si necesitas que todas las solicitudes sean manejadas por un único archivo PHP
+# Puedes comentar o eliminar esta línea si no lo necesitas
+# RewriteRule ^ index.php [L]

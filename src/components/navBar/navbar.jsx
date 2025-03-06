@@ -9,27 +9,38 @@ import {
 } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
-import Navigation from "./navegation/navegation"; // Removed .tsx extension
+import Navigation from "./navegation/navegation"; 
 import Logo from "../../assets/logohitpoly.png";
-import BottonSuport from "./buttonSoporte/buttonSoporte"; // Removed .tsx extension
-import AccessButton from "./accessbutton/accessbutton"; // Removed .tsx extension
+import BottonSuport from "./buttonSoporte/buttonSoporte";
+import AccessButton from "./accessbutton/accessbutton";
 import { useTheme, useMediaQuery } from "@mui/material";
+import { useNavigate } from "react-router-dom"; 
 
-function NavBar() {
+function NavBar({ userId }) { 
+  const navigate = useNavigate(); 
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("md"));
   const [drawerOpen, setDrawerOpen] = useState(false);
+
+  console.log("USER ID :", userId); 
 
   const menuItems = [
     { label: "OPORTUNIDAD ÚNICA", sectionId: "section1" },
     { label: "NUESTRO PROPÓSITO", sectionId: "section2" },
     { label: "CONÓCENOS", sectionId: "section3" },
-
     { label: "PREGUNTAS FRECUENTES", sectionId: "section5" },
   ];
 
   const toggleDrawer = (open) => () => {
     setDrawerOpen(open);
+  };
+
+  const handleAccess = () => {
+    if (userId) {
+      window.location.href = "https://sistemamembresia.hitpoly.com/pagoservicios";
+    } else {
+      window.location.href = "https://sistemamembresia.hitpoly.com/";
+    }
   };
 
   return (
@@ -41,11 +52,7 @@ function NavBar() {
           justifyContent: "space-between",
         }}
       >
-        <img
-          src={Logo}
-          alt="Logo"
-          style={{ height: isMobile ? "35px" : "40px" }}
-        />
+        <img src={Logo} alt="Logo" style={{ height: isMobile ? "35px" : "40px" }} />
 
         {!isMobile ? (
           <Box sx={{ flexGrow: 1, display: "flex", justifyContent: "center" }}>
@@ -59,12 +66,10 @@ function NavBar() {
 
         {!isMobile && (
           <>
-            <AccessButton text="Acceder Ahora" onClick={() => {}} />
+            <AccessButton text="Acceder Ahora" onClick={handleAccess} /> 
             <BottonSuport
               text="Atención al Cliente"
-              onClick={() => {
-                window.location.href = "https://wa.me/51933961352";
-              }}
+              onClick={() => window.location.href = "https://wa.me/51933961352"}
               sx={{
                 color: "#6F4CE0",
                 borderColor: "#6F4CE0",
@@ -91,10 +96,7 @@ function NavBar() {
             onKeyDown={toggleDrawer(false)}
           >
             <Box sx={{ display: "flex", padding: "10px" }}>
-              <IconButton
-                onClick={toggleDrawer(false)}
-                sx={{ color: "#6F4CE0" }}
-              >
+              <IconButton onClick={toggleDrawer(false)} sx={{ color: "#6F4CE0" }}>
                 <CloseIcon />
               </IconButton>
             </Box>
@@ -140,15 +142,10 @@ function NavBar() {
                 </ListItemButton>
               ))}
             </List>
-            <Box
-              sx={{
-                padding: "0px",
-                marginTop: "0px",
-              }}
-            >
+            <Box sx={{ padding: "0px", marginTop: "0px" }}>
               <AccessButton
                 text="Acceder ahora"
-                onClick={() => {}}
+                onClick={handleAccess}
                 sx={{
                   width: "100%",
                   color: "#6F4CE0",
@@ -160,12 +157,7 @@ function NavBar() {
                 }}
               />
             </Box>
-            <Box
-              sx={{
-                padding: "20px",
-                marginTop: "auto",
-              }}
-            >
+            <Box sx={{ padding: "20px", marginTop: "auto" }}>
               <BottonSuport
                 text="Atención al Cliente"
                 onClick={() => {}}
