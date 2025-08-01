@@ -37,7 +37,7 @@ function NavBar({ userId }) {
 
   const handleAccess = () => {
     if (userId) {
-      window.location.href = "https://sistemamembresia.hitpoly.com/pagoservicios";
+      window.location.href = "https://sistemamembresia.hitpoly.com/register";
     } else {
       window.location.href = "https://sistemamembresia.hitpoly.com/";
     }

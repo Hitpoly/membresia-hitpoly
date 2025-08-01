@@ -12,10 +12,8 @@ import { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
 
 function Home() {
-
   const location = useLocation();
   const [userId, setUserId] = useState(null);
-
 
   useEffect(() => {
     const params = new URLSearchParams(location.search);
@@ -41,13 +39,13 @@ function Home() {
             left: 0,
             right: 0,
             zIndex: 1000,
-            padding: {xs: "0px 10px", md: "10px 40px"},
+            padding: { xs: "0px 10px", md: "10px 40px" },
             backgroundColor: "rgba(250, 250, 250, 0.8)",
             borderBottomLeftRadius: "25px",
             borderBottomRightRadius: "25px",
           }}
         >
-          <NavBar   userId={userId} />
+          <NavBar userId={userId} />
         </Box>
         <Box
           sx={{
