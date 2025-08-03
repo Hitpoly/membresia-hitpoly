@@ -3,49 +3,48 @@ import { Box } from "@mui/material";
 
 const cardData = [
   {
-    title: "¡GANA DINERO DESDE EL MES 1 CON EL SISTEMA MÁS INNOVADOR!",
+    title: "NO VENDES, CONECTAS: TU ROL ES IMPULSAR OPORTUNIDADES",
     number: "01",
     description:
-      "Únete a nuestra red global y empieza a ganar dinero desde el primer mes. Con nuestro sistema único de marketing digital, tendrás todo lo necesario para comenzar. No necesitas experiencia previa, solo compromiso y el respaldo de nuestra plataforma.",
+      "En Hitpoly, el setter no vende: conecta. Tu misión es identificar, filtrar y agendar prospectos de calidad para que nuestros expertos cierren las oportunidades. Tú eres el puente que impulsa el crecimiento.",
   },
   {
-    title: "GENERA INGRESOS AUTOMÁTICOS CON ESTRATEGIAS DIGITALES AVANZADAS",
+    title: "GANA DESDE EL PRIMER MES CON NUESTRO SISTEMA",
     number: "02",
     description:
-      "Usa nuestras herramientas exclusivas para captar clientes y generar ventas. Con campañas automáticas y contenido listo para usar, tendrás todo lo necesario para aumentar tus ingresos sin perder tiempo en lo complicado.",
+      "Con nuestro modelo probado, puedes comenzar a generar ingresos desde el primer mes cumpliendo objetivos simples: agendar reuniones estratégicas y mantener un flujo constante de oportunidades.",
   },
   {
-    title: "CRECE EN LA INDUSTRIA DIGITAL Y MULTIPLICA TUS GANANCIAS",
+    title: "FORMA Y LIDERA TU PROPIO EQUIPO DE SETTERS",
     number: "03",
     description:
-      "Es el momento de construir tu propio imperio digital. Con nuestra capacitación y soporte, aprenderás a atraer clientes y liderar tu equipo, generando ingresos pasivos con una estructura simple pero potente.",
+      "En Hitpoly no trabajas solo: a medida que te consolidas, puedes crear y liderar tu propio equipo de setters. Cada crecimiento individual se traduce en el crecimiento colectivo y en mayores ingresos.",
   },
   {
-    title: "CONVIÉRTETE EN UN LÍDER Y MULTIPLICA TUS OPORTUNIDADES DE GANAR",
+    title: "MULTIPLICA TUS GANANCIAS MIENTRAS ESCALAS",
     number: "04",
     description:
-      "Gana dinero no solo por tu trabajo, sino también por el esfuerzo de tu equipo. Conviértete en líder, enseña a tu red a tener éxito y genera ingresos pasivos mientras otros crecen junto a ti.",
+      "No solo ganas por tu trabajo, sino también por el desempeño de tu equipo. Nuestro modelo colaborativo te permite escalar tus ingresos a medida que lideras y desarrollas nuevos talentos.",
   },
   {
-    title: "CREA UNA MARCA PERSONAL Y CONQUISTA EL MERCADO",
+    title: "GUIONES, ESTRATEGIAS Y HERRAMIENTAS LISTAS PARA USAR",
     number: "05",
     description:
-      "Construye una presencia digital única y destaca como líder en marketing multinivel. Te enseñamos a crear tu marca personal, atraer seguidores leales y convertirte en un referente en tu industria.",
+      "No empiezas desde cero: te entregamos estrategias claras, scripts efectivos, herramientas digitales y acompañamiento constante para que ejecutes tu rol con profesionalismo y confianza.",
   },
   {
-    title: "GANANCIAS EXPONENCIALES Y PREMIOS POR CADA LOGRO",
+    title: "EVOLUCIONA EN TU CARRERA DIGITAL",
     number: "06",
     description:
-      "Cada paso que das te acerca más a mayores ingresos. No solo ganarás dinero por tus ventas, sino que también recibirás premios exclusivos por alcanzar tus metas. Tu esfuerzo será recompensado de forma continua.",
+      "Ser setter es solo el primer paso. En Hitpoly te guiamos para que puedas evolucionar hacia el cierre de ventas o la dirección de equipos, aumentando tu impacto y tu potencial de ingresos.",
   },
 ];
 
-
 function CardHome() {
   const headerProps = {
-    title: "SOMOS UN ENTORNO DE CAPITALIZACIÓN SEGURA",
+    title: "SISTEMA DE SETTERS HITPOLY: CONECTA, LIDERA Y CRECE",
     subtitle:
-      "En Hitpoly, no solo ofrecemos acceso a herramientas; te brindamos un enfoque integral y personalizado. Nuestro compromiso es acompañarte en cada paso, desarrollando estrategias innovadoras y adaptadas a tus necesidades específicas para maximizar tu crecimiento y tu éxito.",
+      "Genera oportunidades reales, construye tu equipo y escala tu carrera digital. En Hitpoly, tú creces, tu equipo crece y juntos capitalizamos el futuro.",
   };
 
   return (
@@ -53,10 +52,10 @@ function CardHome() {
       <Cards
         headerProps={headerProps}
         cardData={cardData}
-        headerStyles={{ padding: "0px" }} // Estilos personalizados para la cabecera
+        headerStyles={{ padding: "0px" }}
         cardStyles={{
           display: "flex",
-          borderRadius: "25px", // Bordes redondeados
+          borderRadius: "25px",
         }}
       />
     </Box>

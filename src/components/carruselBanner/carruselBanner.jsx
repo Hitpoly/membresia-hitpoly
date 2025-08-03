@@ -12,21 +12,22 @@ const images = [image1, image2, image3];
 // Data for the banners
 const bannersData = [
   {
-    title: "INNOVACIÓN QUE TRANSFORMA",
+    title: "CONEXIONES QUE GENERAN OPORTUNIDADES",
     subtitle:
-      "Accede a soluciones digitales de vanguardia que te posicionan como líder en la nueva era del emprendimiento.",
+      "Forma parte del sistema de setters de Hitpoly y abre puertas a nuevas posibilidades, conectando a las personas correctas con soluciones de alto impacto.",
   },
   {
-    title: "CRECIMIENTO ASEGURADO",
+    title: "ESCALA TU CRECIMIENTO SIN LÍMITES",
     subtitle:
-      "Un sistema diseñado para que obtengas resultados medibles desde el primer mes, con herramientas que potencian tu éxito.",
+      "Con nuestro modelo colaborativo, creces tú y crece tu equipo. Multiplica tus resultados con estrategias, acompañamiento y herramientas listas para usar.",
   },
   {
-    title: "UN CAMINO HACIA LA INDEPENDENCIA",
+    title: "CAPITALIZA TU FUTURO DESDE HOY MISMO",
     subtitle:
-      "Construye un futuro sólido con oportunidades que combinan tecnología, conocimiento y capitalización efectiva.",
+      "Construye un camino sólido hacia la independencia financiera mientras aprendes, lideras y te posicionas en el mundo digital con Hitpoly.",
   },
 ];
+
 
 function CarruselBanner() {
   const [currentIndex, setCurrentIndex] = useState(0);

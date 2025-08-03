@@ -14,24 +14,23 @@ const images = {
 
 const tabs = {
   economica: {
-    title: "IMPACTO ECONÓMICO",
+    title: "LAS COMISIONES MÁS ALTAS DE LATINOAMÉRICA",
     subtitle:
-      "Impulsa tus ingresos con un sistema que combina tecnología y estrategias digitales. Diseñado para que obtengas resultados inmediatos mientras creas un futuro financiero sostenible. Aquí, tu éxito es parte de nuestra misión.",
+      "Como Setter de Élite puedes ganar hasta el 30% de la facturación total en cada oportunidad que generes. Sin límites, sin competencia interna y con total respaldo: el primero que registra al prospecto se queda con la comisión. Aquí tu tiempo vale y tus contactos se convierten en dinero real.",
     image: images.economica,
   },
   educacion: {
-    title: "APRENDIZAJE TRANSFORMADOR",
+    title: "TECNOLOGÍA Y FORMACIÓN DE OTRO NIVEL",
     subtitle:
-      "Domina habilidades digitales con programas educativos diseñados para el éxito. Aprende a gestionar herramientas innovadoras y a construir tu negocio digital con confianza, marcando un nuevo estándar en el emprendimiento.",
+      "Tendrás acceso a nuestro CRM, sistema de afiliados, tecnologías exclusivas, programas de capacitación y mentorías para que aprendas a identificar oportunidades en cualquier sector. Te impulsamos con bonos, regalías, premios por alcanzar metas y una cultura emprendedora diseñada para que capitalices tus conocimientos en internet.",
     image: images.educacion,
   },
   empresarial: {
-    title: "COMERCIALIZA SOLUCIONES DIGITALES",
+    title: "VENDE LO QUE QUIERAS, CON EL RESPALDO DE HITPOLY",
     subtitle:
-      "Como parte de Hitpoly, tendrás la oportunidad de ofrecer a marcas y empresas soluciones de marketing digital y desarrollo de software, ayudándolas a capitalizar en internet de manera segura y efectiva. Además, podrás compartir esta oportunidad única, expandiendo tus ingresos y construyendo una red comercial que te llevara al camino  del éxito.",
+      "Servicios, soluciones y productos de alto valor: marketing, ventas, desarrollo de tecnologías digitales y más. Tú generas el contacto, nosotros cerramos la venta y tú cobras. Un ecosistema completo para que vivas de encontrar personas con problemas y guiarlas hacia la solución, mientras escalas tus ingresos sin techo.",
     image: images.empresarial,
   },
-
 };
 
 
