@@ -36,12 +36,14 @@ function NavBar({ userId }) {
   };
 
   const handleAccess = () => {
-    if (userId) {
-      window.location.href = "https://sistemamembresia.hitpoly.com/register";
-    } else {
-      window.location.href = "https://sistemamembresia.hitpoly.com/";
-    }
-  };
+  if (userId) {
+    const encodedId = btoa(userId); 
+    window.location.href = `https://sistemamembresia.hitpoly.com/register?referidoId=${encodedId}`;
+  } else {
+    window.location.href = "https://sistemamembresia.hitpoly.com/";
+  }
+};
+
 
   return (
     <Box sx={{ padding: { xs: "10px 5px", sm: "10px 20px", md: "10px 0px" } }}>
